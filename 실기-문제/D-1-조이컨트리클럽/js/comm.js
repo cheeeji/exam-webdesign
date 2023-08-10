@@ -19,4 +19,12 @@ $(function () {
       $(this).parent().addClass("active");
     }
   });
+
+  // tab
+  // .tab-tit을 클릭했을 때
+  $(".tab-tit button").on("click", function () {
+    // .tab에 있는 active 삭제
+    $(".tab").removeClass("active");
+  });
+  $(this).parents(".tab").add("active");
 });
